@@ -1,22 +1,26 @@
 const express = require("express");
-const cors = require("cors");
 const nodemailer = require("nodemailer");
+const app = express();
 require("dotenv").config();
 
-const app = express();
+const cors = require("cors");
 
 app.use(cors({
-  origin: ["http://localhost:5173", "https://your-netlify-site.netlify.app"],
-  methods: ["POST"],
+  origin: ["http://localhost:5173", "https://your-frontend.netlify.app"], // replace with your actual frontend URL
+  methods: ["GET", "POST"],
 }));
 
 app.use(express.json());
+
+app.get("/", (req, res) => {
+  res.send("API is working");
+});
 
 app.post("/contact", async (req, res) => {
   const { name, email, subject, message } = req.body;
 
   const transporter = nodemailer.createTransport({
-    service: "gmail",
+    service: 'gmail',
     auth: {
       user: process.env.EMAIL_USER,
       pass: process.env.EMAIL_PASS,
@@ -25,19 +29,19 @@ app.post("/contact", async (req, res) => {
 
   const mailOptions = {
     from: email,
-    to: process.env.EMAIL_TO,
-    subject: `Contact Form: ${subject}`,
+    to: "yourgmail@gmail.com", // Change this
+    subject: `Contact form: ${subject}`,
     text: `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`,
   };
 
   try {
     await transporter.sendMail(mailOptions);
-    return res.status(200).json({ message: "Message sent successfully!" });
+    res.status(200).json({ message: "Message sent successfully!" });
   } catch (error) {
     console.error("Email error:", error);
-    return res.status(500).json({ message: "Failed to send message." });
+    res.status(500).json({ message: "Failed to send message." });
   }
 });
 
-// Export the handler for Vercel
+// 👉 Export the handler for Vercel
 module.exports = app;
