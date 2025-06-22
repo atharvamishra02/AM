@@ -26,7 +26,7 @@ const Contact = () => {
   e.preventDefault();
   setLoading(true); // Start loading
 
-fetch("backend/index.js", {
+fetch("https://your-backend-name.vercel.app/contact", {
   method: "POST",
   headers: {
     "Content-Type": "application/json"

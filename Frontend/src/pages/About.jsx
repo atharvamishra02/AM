@@ -63,7 +63,7 @@ const projects = [
   },
   {
     title: "Portfolio",
-    description: "A platform for medical freelancers to showcase their profiles, availability, and skills. Built using React and Firebase.",
+    description: "MY first portfolio i made while learning basic concepts of frontend .",
     link: "https://atharvamishra.netlify.app/"
   },
   {
