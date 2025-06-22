@@ -26,13 +26,14 @@ const Contact = () => {
   e.preventDefault();
   setLoading(true); // Start loading
 
-fetch(`${import.meta.env.VITE_BACKEND_URL}/contact`, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify(formData),
-  })
+fetch("backend/index.js", {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json"
+  },
+  body: JSON.stringify(formData)
+})
+
     .then((res) => {
       setLoading(false); // Stop loading
       if (res.ok) {

@@ -1,45 +1,38 @@
+// index.js
 const express = require("express");
 const nodemailer = require("nodemailer");
-const app = express();
-require("dotenv").config();
-console.log("Email:", process.env.EMAIL_USER);
-console.log("Pass:", process.env.EMAIL_PASS);
-
-
-const PORT = 5000;
-
 const cors = require("cors");
+require("dotenv").config();
+
+const app = express();
+const PORT = 5000;
 
 app.use(cors({
   origin: ["http://localhost:5173", "https://your-frontend.vercel.app"],
-  methods: ["GET", "POST"],
+  methods: ["GET", "POST"]
 }));
-
 app.use(express.json());
 
-// Test route
 app.get("/", (req, res) => {
   res.send("API is working");
 });
 
-// Contact form route
 app.post("/contact", async (req, res) => {
   const { name, email, subject, message } = req.body;
 
-const transporter = nodemailer.createTransport({
-  service: 'gmail',
-  auth: {
-    user: process.env.EMAIL_USER,
-    pass: process.env.EMAIL_PASS,
-  },
-});
-
+  const transporter = nodemailer.createTransport({
+    service: 'gmail',
+    auth: {
+      user: process.env.EMAIL_USER,
+      pass: process.env.EMAIL_PASS,
+    },
+  });
 
   const mailOptions = {
     from: email,
-    to: "yourgmail@gmail.com", // where you want to receive the message
+    to: "yourgmail@gmail.com",
     subject: `Contact form: ${subject}`,
-    text: `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`,
+    text: `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`
   };
 
   try {
@@ -52,5 +45,5 @@ const transporter = nodemailer.createTransport({
 });
 
 app.listen(PORT, () => {
-  console.log(`🚀 Server running on http://localhost:${PORT}`);
+  console.log(`🚀 Server running at http://localhost:${PORT}`);
 });
