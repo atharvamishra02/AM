@@ -26,7 +26,7 @@ const Contact = () => {
   e.preventDefault();
   setLoading(true); // Start loading
 
-fetch("https://am2-brown.vercel.app/", {
+fetch("https://am2-brown.vercel.app/contact", {
   method: "POST",
   headers: {
     "Content-Type": "application/json"
