@@ -13,12 +13,7 @@ app.use(cors({
 
 app.use(express.json());
 
-
 app.get("/", (req, res) => {
-  res.send("Backend is live. Contact endpoint is ready.");
-});
-
-app.get("/contact", (req, res) => {
   res.send("API is working");
 });
 
