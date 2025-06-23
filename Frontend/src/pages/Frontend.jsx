@@ -1,5 +1,5 @@
 import React from "react";
-import aag from "../assets/aag.mp4";
+import bg1 from "../assets/bg1.mp4";
 import { motion } from "framer-motion";
 
 const frontendSkills = [
@@ -31,17 +31,19 @@ const frontendSkills = [
 
 const Frontend = () => {
   return (
-    <div className="relative min-h-screen overflow-hidden text-white">
-      {/* Background Video */}
-      <video
-        className="fixed top-0 left-0 w-full h-full object-cover z-0"
-        src={aag}
-        autoPlay
-        muted
-        loop
-        playsInline
-      />
-      <div className="fixed top-0 left-0 w-full h-full " />
+    <div className="relative w-full min-h-screen overflow-hidden">
+          {/* Fixed Background Video */}
+          <video
+            className="fixed top-0 left-0 w-full h-full object-cover z-0"
+            src={bg1}
+            autoPlay
+            muted
+            loop
+            playsInline
+          />
+    
+          {/* Dark Overlay */}
+          <div className="fixed top-0 left-0 w-full h-full " />
 
       {/* Foreground Content */}
       <div className="relative z-10 px-6 py-24 max-w-6xl mx-auto">

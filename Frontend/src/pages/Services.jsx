@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import aag from "../assets/aag.mp4"; // Background video
+import bg1 from "../assets/bg1.mp4"; // Background video
 import { Link } from "react-router-dom";
 
 const services = [
@@ -20,19 +20,19 @@ const services = [
 
 const Services = () => {
   return (
-    <div className="relative min-h-screen w-full overflow-hidden">
-      {/* Background Video */}
-      <video
-        className="absolute top-0 left-0 w-full h-full object-cover z-0"
-        src={aag}
-        autoPlay
-        muted
-        loop
-        playsInline
-      />
-
-      {/* Dark Overlay */}
-      <div className="absolute top-0 left-0 w-full h-full" />
+    <div className="relative w-full min-h-screen overflow-hidden">
+          {/* Fixed Background Video */}
+          <video
+            className="fixed top-0 left-0 w-full h-full object-cover z-0"
+            src={bg1}
+            autoPlay
+            muted
+            loop
+            playsInline
+          />
+    
+          {/* Dark Overlay */}
+          <div className="fixed top-0 left-0 w-full h-full " />
 
       {/* Content */}
       <section

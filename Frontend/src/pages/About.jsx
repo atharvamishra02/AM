@@ -1,5 +1,5 @@
 import React from "react";
-import aag from "../assets/aag.mp4";
+import bg1 from "../assets/bg1.mp4";
 import am from "../assets/am.png";
 import { motion } from "framer-motion";
 
@@ -90,7 +90,7 @@ const About = () => {
       {/* Fixed Background Video */}
       <video
         className="fixed top-0 left-0 w-full h-full object-cover z-0"
-        src={aag}
+        src={bg1}
         autoPlay
         muted
         loop

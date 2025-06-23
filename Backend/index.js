@@ -6,7 +6,7 @@ require("dotenv").config();
 const cors = require("cors");
 
 app.use(cors({
-  origin: ["http://localhost:5173", "https://your-frontend.netlify.app"], // replace with your actual frontend URL
+  origin: ["http://localhost:5173", "https://atharvamishra2.netlify.app"], // replace with your actual frontend URL
   methods: ["GET", "POST"],
 }));
 

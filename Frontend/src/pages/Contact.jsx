@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import aag from "../assets/aag.mp4";
+import bg1 from "../assets/bg1.mp4";
 import { ClipLoader } from "react-spinners";
 
 
@@ -53,19 +53,19 @@ fetch("https://your-backend-name.vercel.app/contact", {
 
 
   return (
-    <div className="relative min-h-screen w-full overflow-hidden">
-      {/* Background Video */}
-      <video
-        className="fixed top-0 left-0 w-full h-full object-cover z-0"
-        src={aag}
-        autoPlay
-        muted
-        loop
-        playsInline
-      />
-
-      {/* Dark overlay */}
-      <div className="fixed top-0 left-0 w-full h-full " />
+   <div className="relative w-full min-h-screen overflow-hidden">
+         {/* Fixed Background Video */}
+         <video
+           className="fixed top-0 left-0 w-full h-full object-cover z-0"
+           src={bg1}
+           autoPlay
+           muted
+           loop
+           playsInline
+         />
+   
+         {/* Dark Overlay */}
+         <div className="fixed top-0 left-0 w-full h-full " />
 
       {/* Foreground content */}
       <motion.div

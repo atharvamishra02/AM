@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import logo1 from "../assets/logo1.png";
-import aag from "../assets/aag.mp4";
+import bg1 from "../assets/bg1.mp4";
 import { Typewriter } from "react-simple-typewriter";
 import { FaInstagram, FaWhatsapp, FaPhoneAlt } from "react-icons/fa";
 
@@ -22,18 +22,18 @@ const itemVariants = {
 const Home = () => {
   return (
     <div className="relative w-full min-h-screen overflow-hidden">
-      {/* Fixed Background Video */}
-      <video
-        className="fixed top-0 left-0 w-full h-full object-cover z-0"
-        src={aag}
-        autoPlay
-        muted
-        loop
-        playsInline
-      />
-
-      {/* Dark Overlay */}
-      <div className="fixed top-0 left-0 w-full h-full z-0" />
+          {/* Fixed Background Video */}
+          <video
+            className="fixed top-0 left-0 w-full h-full object-cover z-0"
+            src={bg1}
+            autoPlay
+            muted
+            loop
+            playsInline
+          />
+    
+          {/* Dark Overlay */}
+          <div className="fixed top-0 left-0 w-full h-full " />
 
       {/* Main Content */}
       <motion.div
@@ -132,7 +132,7 @@ const Home = () => {
             <motion.img
               src={logo1}
               alt="Atharva Profile"
-              className="w-60 h-60 md:w-130 md:h-130 rounded-full object-cover"
+              className="w-60 h-60 md:w-140 md:h-140 rounded-full object-cover"
               animate={{ rotateY: 360 }}
               transition={{
                 repeat: Infinity,
