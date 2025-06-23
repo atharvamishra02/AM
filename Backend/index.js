@@ -6,8 +6,9 @@ require("dotenv").config();
 const cors = require("cors");
 
 app.use(cors({
-  origin: ["http://localhost:5173", "https://atharvamishra2.vercel.app/"], // replace with your actual frontend URL
-  methods: ["GET", "POST"],
+  origin: "https://atharvamishra2.vercel.app/", // replace with your actual frontend URL
+   methods: ["GET", "POST", "PUT", "DELETE"],
+   credentials: true,
 }));
 
 app.use(express.json());
