@@ -45,14 +45,14 @@ const Home = () => {
         {/* Hero Row */}
         <motion.div className="flex flex-col md:flex-row items-center justify-between gap-12 w-full max-w-7xl">
           {/* LEFT: Text */}
-          <motion.div className="md:w-1/2 text-left" variants={itemVariants}>
+          <motion.div className="md:w-1/2 text-center md:text-left" variants={itemVariants}>
             <h1 className="text-4xl md:text-5xl text-gray-500 font-extrabold mb-4">
               Hey,
             </h1>
             <h1 className="text-4xl md:text-4xl font-extrabold mb-4">
               I'm Atharva Mishra
             </h1>
-            <h1 className="text-4xl md:text-4xl font-bold mb-4 text-gray-500">
+            <h1 className="text-4xl md:text-4xl font-bold mb-4 text-gray-500 min-h-[100px] md:min-h-0">
               I'm a{" "}
               <span className="text-orange-500">
                 <Typewriter
@@ -74,7 +74,7 @@ const Home = () => {
             </h1>
 
              {/* Social Contact Icons */}
-          <div className="mt-6 flex items-center gap-6">
+          <div className="mt-6 flex items-center justify-center md:justify-start gap-6">
             <a
               href="https://www.instagram.com/the_atharvamishra_/"
               target="_blank"
