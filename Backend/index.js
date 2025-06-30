@@ -6,7 +6,7 @@ require("dotenv").config();
 const cors = require("cors");
 
 app.use(cors({
-  origin: "https://atharvamishra3.vercel.app", // replace with your actual frontend URL
+  origin: "*", // Allow all origins
    methods: ["GET", "POST", "PUT", "DELETE"],
    credentials: true,
 }));
@@ -30,7 +30,7 @@ app.post("/contact", async (req, res) => {
 
   const mailOptions = {
     from: email,
-    to: "yourgmail@gmail.com", // Change this
+    to: process.env.EMAIL_USER, // Changed to use environment variable
     subject: `Contact form: ${subject}`,
     text: `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`,
   };
