@@ -7,7 +7,7 @@ import { FaInstagram, FaWhatsapp, FaPhoneAlt } from "react-icons/fa";
 
 const containerVariants = {
   hidden: {},
-  visible: {
+  visible: {  
     transition: {
       staggerChildren: 0.5,
     },
@@ -37,7 +37,7 @@ const Home = () => {
 
       {/* Main Content */}
       <motion.div
-        className="relative z-10 min-h-screen flex flex-col items-center justify-center  px-5 py-22 text-orange-400"
+        className="relative z-10 min-h-screen flex flex-col items-center justify-center  px-5 py-22 text-orange-500"
         variants={containerVariants}
         initial="hidden"
         animate="visible"
@@ -54,7 +54,7 @@ const Home = () => {
             </h1>
             <h1 className="text-4xl md:text-4xl font-bold mb-4 text-gray-500">
               I'm a{" "}
-              <span className="text-orange-400">
+              <span className="text-orange-500">
                 <Typewriter
                   words={[
                     "Full Stack Developer",
@@ -79,7 +79,7 @@ const Home = () => {
               href="https://www.instagram.com/the_atharvamishra_/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-orange-400 hover:text-orange-600 transition-colors text-2xl"
+              className="text-orange-500 hover:text-orange-600 transition-colors text-2xl"
             >
               <FaInstagram />
             </a>
@@ -87,13 +87,13 @@ const Home = () => {
               href="https://wa.me/919219004079"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-orange-400 hover:text-green-500 transition-colors text-2xl"
+              className="text-orange-500 hover:text-green-500 transition-colors text-2xl"
             >
               <FaWhatsapp />
             </a>
             <a
               href="tel:+919219004079"
-              className="text-orange-400 hover:text-blue-400 transition-colors text-2xl"
+              className="text-orange-500 hover:text-blue-400 transition-colors text-2xl"
             >
               <FaPhoneAlt />
             </a>
@@ -104,7 +104,7 @@ const Home = () => {
               <motion.a
                 href="/Atharva_Mishra.pdf"
                 download
-                className="px-5 py-3 bg-gray-500 text-orange-400 font-bold rounded-full hover:bg-orange-600 transition-colors shadow-lg"
+                className="px-5 py-3 bg-gray-600 text-orange-500 font-bold rounded-full hover:bg-gray-800 transition-colors shadow-lg"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 1.7 }}
@@ -149,7 +149,7 @@ const Home = () => {
         {/* CTA Button */}
         <motion.a
           href="mailto:you@email.com"
-          className="mt-12 px-6 py-3 bg-gray-600 text-orange-400 font-bold rounded-full hover:bg-yellow-300 transition-colors shadow-lg"
+          className="mt-12 px-6 py-3 bg-gray-600 text-orange-500 font-bold rounded-full hover:bg-gray-800 transition-colors shadow-lg"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1.5 }}
@@ -160,7 +160,7 @@ const Home = () => {
         {/* Stack & Bio */}
 
         <motion.p
-          className="text-md text-orange-400 mt-4 max-w-2xl font-bold text-center"
+          className="text-md text-orange-500 mt-4 max-w-2xl font-bold text-center"
           variants={itemVariants}
         >
           I'm a detail-driven full stack dev who thrives on performance, design,
@@ -173,7 +173,7 @@ const Home = () => {
       <section className="relative z-10 w-full py-24 px-6 bg-transparent text-white">
         <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-10">
           <div className="bg-white/10 p-6 rounded-xl backdrop-blur-md hover:shadow-xl transition-all">
-            <h3 className="text-xl font-bold mb-2 text-orange-400">
+            <h3 className="text-xl font-bold mb-2 text-orange-500">
               My Passion
             </h3>
             <p className="text-gray-300">
@@ -183,7 +183,7 @@ const Home = () => {
             </p>
           </div>
           <div className="bg-white/10 p-6 rounded-xl backdrop-blur-md hover:shadow-xl transition-all">
-            <h3 className="text-xl font-bold mb-2 text-orange-400">
+            <h3 className="text-xl font-bold mb-2 text-orange-500">
               What Drives Me
             </h3>
             <p className="text-gray-300">
@@ -192,7 +192,7 @@ const Home = () => {
             </p>
           </div>
           <div className="bg-white/10 p-6 rounded-xl backdrop-blur-md hover:shadow-xl transition-all">
-            <h3 className="text-xl font-bold mb-2 text-orange-400">
+            <h3 className="text-xl font-bold mb-2 text-orange-500">
               Projects I Love
             </h3>
             <p className="text-gray-300">
