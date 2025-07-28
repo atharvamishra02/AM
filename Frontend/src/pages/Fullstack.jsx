@@ -36,7 +36,7 @@ const fullstackSkills = [
 
 const FullStack = () => {
   return (
-   <div className="relative w-full min-h-screen overflow-hidden">
+   <div className="relative w-full min-h-screen overflow-hidden bg-zinc-900">
          {/* Fixed Background Video */}
          <video
            className="fixed top-0 left-0 w-full h-full object-cover z-0"

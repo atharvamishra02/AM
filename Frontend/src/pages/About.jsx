@@ -56,6 +56,24 @@ const techStack = [
 ];
 
 const projects = [
+  
+
+  {
+    title: "Yuvdish",
+    description: "Yuvdish bridges the gap between blue-collar job seekers and recruiters in Bengaluru, empowering livelihoods through smart matchmaking, real-time listings, and human-first tech.",
+    link: "https://yuvdish.netlify.app/"
+  },
+  {
+    title: "LearnX",
+    description: "A full-stack learning management platform with separate Admin and Student portals. Admins can create and manage courses, while students can enroll, study, and track their progress. Built using React, Node.js, Express, and MongoDB.",
+    link: "https://olp2.up.railway.app/"
+  },
+
+  {
+    title: "The Spiritual Trends",
+    description: "Building a full-stack spiritual trends platform showcasing divine feminine energy, rituals, and goddess-centric products — blending sacred aesthetics with modern tech, tailored for a niche audience.",
+    link: "https://tsm1.netlify.app/"
+  },
   {
     title: "ShoeVerse",
     description: "A full-stack e-commerce platform for designer shoes with categories, cart, and checkout built using MERN stack.",
@@ -63,30 +81,15 @@ const projects = [
   },
   {
     title: "Portfolio",
-    description: "MY first portfolio i made while learning basic concepts of frontend .",
-    link: "https://atharvamishra.netlify.app/"
-  },
-  {
-    title: "Yuvdish",
-    description: "Yuvdish bridges the gap between blue-collar job seekers and recruiters in Bengaluru, empowering livelihoods through smart matchmaking, real-time listings, and human-first tech.",
-    link: "https://yuvdish.netlify.app/"
-  },
-  {
-    title: "The RR Hospital",
-    description: "A platform for medical freelancers to showcase their profiles, availability, and skills. Built using React and Firebase.",
-    link: "https://the-r-r-hospital.vercel.app/"
-  },
-  {
-    title: "The Spiritual Trends",
-    description: "Building a full-stack spiritual trends platform showcasing divine feminine energy, rituals, and goddess-centric products — blending sacred aesthetics with modern tech, tailored for a niche audience.",
-    link: "https://github.com/atharvamishra02/the_spiritual_trend"
+    description: "MY first portfolio i made while learning basic concepts of Nextjs .",
+    link: "https://harshitrajarya.vercel.app/"
   },
 ];
 
 
 const About = () => {
   return (
-    <div className="relative w-full min-h-screen overflow-hidden">
+    <div className="relative w-full min-h-screen overflow-hidden bg-zinc-900">
       {/* Fixed Background Video */}
       <video
         className="fixed top-0 left-0 w-full h-full object-cover z-0"
@@ -141,23 +144,11 @@ const About = () => {
 
 <div className="grid grid-cols-2 sm:grid-cols-4 gap-8 place-items-center px-10 bg-white/10 py-8 rounded-xl backdrop-blur-md shadow-md w-full max-w-4xl overflow-hidden">
   {techStack.map((item, index) => (
-    <motion.img
+    <img
       key={index}
       src={item.src}
       alt={item.alt}
       className="w-16 h-16 sm:w-20 sm:h-20"
-      initial={{ y: 200, opacity: 0 }}
-      animate={{
-        y: [200, 0, -200],
-        opacity: [0, 1, 0],
-      }}
-      transition={{
-        duration: 4,
-        delay: index * 0.3,
-        repeat: Infinity,
-        repeatType: "loop",
-        ease: "easeInOut",
-      }}
     />
   ))}
 </div>
