@@ -70,19 +70,19 @@ const projects = [
   },
 
   {
-    title: "The Spiritual Trends",
-    description: "Building a full-stack spiritual trends platform showcasing divine feminine energy, rituals, and goddess-centric products — blending sacred aesthetics with modern tech, tailored for a niche audience.",
-    link: "https://tsm1.netlify.app/"
+    title: "Cruise Management ship",
+    description: "Building a full-stack Cruise mangaement system where everything is online for a particular online ship you can use it through ur devices order book and many more go and use it.",
+    link: "https://cruise2.vercel.app/"
   },
   {
-    title: "ShoeVerse",
-    description: "A full-stack e-commerce platform for designer shoes with categories, cart, and checkout built using MERN stack.",
-    link: "https://kingshoe.netlify.app/"
+    title: "GYM-Management-system",
+    description: "A full-stack Gym-management system for Gym owners and their member you can reach out through mebers online and there is not any problem would be their by maintaining their f=data on sheets the data is stored in firestore easily. I made it through MERN stack.",
+    link: "https://bodymass-gym.vercel.app/"
   },
   {
-    title: "Portfolio",
-    description: "MY first portfolio i made while learning basic concepts of Nextjs .",
-    link: "https://harshitrajarya.vercel.app/"
+    title: "Music App",
+    description: "MY first Music App where u can listen ur favourite music also you add your favourite songs ,  you can upload your music and use it .",
+    link: "https://spongify.vercel.app/"
   },
 ];
 
