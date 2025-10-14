@@ -66,7 +66,7 @@ const projects = [
   {
     title: "LearnX",
     description: "A full-stack learning management platform with separate Admin and Student portals. Admins can create and manage courses, while students can enroll, study, and track their progress. Built using React, Node.js, Express, and MongoDB.",
-    link: "https://olp2.up.railway.app/"
+    link: "https://olp2.vercel.app/"
   },
 
   {
