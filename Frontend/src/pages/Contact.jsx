@@ -26,7 +26,11 @@ const Contact = () => {
   e.preventDefault();
   setLoading(true); // Start loading
 
-fetch("https://am2-brown.vercel.app/contact", {
+  const backendUrl = import.meta.env.VITE_BACKEND_URL || "";
+  const contactEndpoint = backendUrl.endsWith("/") ? `${backendUrl}contact` : `${backendUrl}/contact`;
+  const targetUrl = backendUrl ? contactEndpoint : "/api/contact";
+
+fetch(targetUrl, {
   method: "POST",
   headers: {
     "Content-Type": "application/json"
