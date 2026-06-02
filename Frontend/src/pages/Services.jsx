@@ -7,14 +7,32 @@ const services = [
   {
     title: "Frontend Development",
     desc: "Pixel-perfect UI with React, Tailwind, and animations for fast, responsive apps.",
+    path: "/frontend-development",
   },
   {
     title: "Backend Development",
     desc: "Secure and scalable APIs using Node.js, Express, and MongoDB.",
+    path: "/backend-development",
   },
   {
     title: "Full-Stack Solutions",
     desc: "From database to browser — complete web apps with integrated functionality.",
+    path: "/full-stack-solutions",
+  },
+  {
+    title: "Agentic AI Solutions",
+    desc: "Autonomous AI agents, workflows, and multi-agent systems designed to automate complex tasks and decision-making.",
+    path: "/agentic-ai-solutions",
+  },
+  {
+    title: "AI Integration & Automation",
+    desc: "Integrating state-of-the-art Generative AI models and semantic search into existing systems for seamless automation.",
+    path: "/ai-integration-and-automation",
+  },
+  {
+    title: "Production Deployment & DevOps",
+    desc: "End-to-end production deployment with Docker, CI/CD, SLURM clusters, Nginx, SSL, and server monitoring.",
+    path: "/production-deployment",
   },
 ];
 
@@ -48,7 +66,7 @@ const Services = () => {
           What I Do
         </motion.h2>
 
-        <div className="grid md:grid-cols-3 gap-10 max-w-6xl w-full">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl w-full">
           {services.map((service, index) => (
             <motion.div
               key={index}
@@ -57,7 +75,7 @@ const Services = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: index * 0.2 }}
             >
-              <Link to={`/${service.title.toLowerCase().replace(/\s+/g, '-')}`}>
+              <Link to={service.path}>
                 <div className="bg-white/10 border border-white/20 backdrop-blur-md p-6 rounded-2xl shadow-lg hover:shadow-blue-500/40 transition-all hover:scale-105">
                   <h3 className="text-2xl font-semibold mb-2">{service.title}</h3>
                   <p className="text-gray-300 text-sm leading-relaxed">{service.desc}</p>

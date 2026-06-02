@@ -11,6 +11,9 @@ const Contact = lazy(() => import("./pages/Contact"));
 const Frontend = lazy(() => import("./pages/Frontend"));
 const Backend = lazy(() => import("./pages/Backend"));
 const Fullstack = lazy(() => import("./pages/Fullstack"));
+const AgenticAISolutions = lazy(() => import("./pages/AgenticAISolutions"));
+const AIIntegration = lazy(() => import("./pages/AIIntegration"));
+const ProductionDeployment = lazy(() => import("./pages/ProductionDeployment"));
 
 function App() {
   return (
@@ -25,6 +28,9 @@ function App() {
           <Route path="/frontend-development" element={<Frontend />} />
           <Route path="/backend-development" element={<Backend />} />
           <Route path="/full-stack-solutions" element={<Fullstack />} />
+          <Route path="/agentic-ai-solutions" element={<AgenticAISolutions />} />
+          <Route path="/ai-integration-and-automation" element={<AIIntegration />} />
+          <Route path="/production-deployment" element={<ProductionDeployment />} />
         </Routes>
       </Suspense>
     </Router>

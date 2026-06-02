@@ -16,7 +16,10 @@ import j from '../assets/j.png';
 import g from '../assets/g.png';
 import figma from '../assets/figma.png';
 import next from '../assets/next.webp';
-import python from '../assets/python.webp';
+import python from '../assets/python.webp'
+import ts from '../assets/ts.webp';
+import lc from '../assets/lc.png';
+import lg from '../assets/lg.png';
 
 const containerVariants = {
   hidden: {},
@@ -53,11 +56,22 @@ const techStack = [
   { src: figma, alt: "Figma" },
   { src: next, alt: "next.webp" },
   { src: python, alt: "python.webp" },
+  { src: ts, alt: "typescript.webp" },
+  { src: lc, alt: "Langchain" },  
+  { src: lg, alt: "Langgraph" },
 ];
 
 const projects = [
-  
-
+  {
+    title: "the spiritual trend",
+    description: "A full-stack spiritual e-commerce platform showcasing sacred goddess energy and rituals. Features a beautiful customer storefront, dynamic catalog navigation, a responsive cart/wishlist, and a comprehensive custom admin panel for inventory management.",
+    link: "https://thespiritualtrends.com"
+  },
+  {
+    title: "Agentic RAG System",
+    description: "An advanced, self-correcting multi-agent research assistant designed to parse PDFs and documents, perform semantic search, and synthesize verified answers. Built using React & TypeScript, a Node.js API, and a custom LangGraph-powered Python engine with FAISS vector stores.",
+    link: "https://agenticrag.online/"
+  },
   {
     title: "Yuvdish",
     description: "Yuvdish bridges the gap between blue-collar job seekers and recruiters in Bengaluru, empowering livelihoods through smart matchmaking, real-time listings, and human-first tech.",
@@ -84,6 +98,11 @@ const projects = [
     description: "MY first Music App where u can listen ur favourite music also you add your favourite songs ,  you can upload your music and use it .",
     link: "https://spongify.vercel.app/"
   },
+  {
+    title: "JOB-APPLIER",
+    description: "An automated production job-application agent that parses candidate resumes, searches for matching roles across major platforms like LinkedIn and Naukri, and auto-applies on the candidate's behalf, successfully automating up to 70% of submissions.",
+    link: "https://jobagent.agenticrag.online/"
+  }
 ];
 
 
