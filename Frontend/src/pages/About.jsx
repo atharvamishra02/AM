@@ -65,7 +65,7 @@ const projects = [
   {
     title: "the spiritual trend",
     description: "A full-stack spiritual e-commerce platform showcasing sacred goddess energy and rituals. Features a beautiful customer storefront, dynamic catalog navigation, a responsive cart/wishlist, and a comprehensive custom admin panel for inventory management.",
-    link: "https://thespiritualtrends.com"
+    link: "https://thespritualtrends.com"
   },
   {
     title: "Agentic RAG System",
