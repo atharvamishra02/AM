@@ -78,7 +78,7 @@ jobs:
           host: 151.243.146.243
           username: root
           key: ${{ secrets.SSH_PRIVATE_KEY }}
-          port: 2222
+          port: 22
           source: "docker-compose.yml"
           target: "~/am-portfolio"
 
@@ -88,7 +88,7 @@ jobs:
           host: 151.243.146.243
           username: root
           key: ${{ secrets.SSH_PRIVATE_KEY }}
-          port: 2222
+          port: 22
           script: |
             # Navigate to deploy directory
             mkdir -p ~/am-portfolio
