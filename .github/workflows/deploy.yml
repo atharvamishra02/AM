@@ -75,7 +75,7 @@ jobs:
       - name: Copy docker-compose.yml to server
         uses: appleboy/scp-action@v0.1.7
         with:
-          host: 151.243.146.243
+          host: 194.163.144.48
           username: root
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: 22
@@ -85,7 +85,7 @@ jobs:
       - name: Deploy to Server via SSH
         uses: appleboy/ssh-action@v1.0.3
         with:
-          host: 151.243.146.243
+          host: 194.163.144.48
           username: root
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: 22

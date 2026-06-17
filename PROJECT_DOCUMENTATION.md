@@ -299,8 +299,8 @@ The application is deployed using Docker and Nginx on a self-hosted VPS, automat
 
 ### Production Environment Details
 - **Server OS**: Linux (VPS)
-- **Host**: `151.243.146.243`
-- **SSH Port**: `2222`
+- **Host**: `194.163.144.48`
+- **SSH Port**: `22`
 - **Orchestration**: Docker Compose
 - **Web Server / Reverse Proxy**: Nginx (configured within the frontend container)
 
