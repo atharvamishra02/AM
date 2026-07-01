@@ -1,12 +1,12 @@
 {
-  "name": "new-folder-(2)",
+  "name": "am-portfolio",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "npm --prefix Frontend run lint",
     "start": "concurrently \"npm run server\" \"npm run client\"",
-    "server": "cd backend && npm start",
-    "client": "cd frontend && npm start"
+    "server": "npm --prefix Backend start",
+    "client": "npm --prefix Frontend start"
   },
   "keywords": [],
   "author": "",

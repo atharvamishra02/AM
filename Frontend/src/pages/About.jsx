@@ -21,28 +21,6 @@ import ts from '../assets/ts.webp';
 import lc from '../assets/lc.png';
 import lg from '../assets/lg.png';
 
-const containerVariants = {
-  hidden: {},
-  show: {
-    transition: {
-      staggerChildren: 0.2, // Delay between icons
-    },
-  },
-};
-
-const itemVariants = {
-  hidden: { y: 100, opacity: 0 }, // Fly in from bottom
-  show: {
-    y: 0,
-    opacity: 1,
-    transition: {
-      type: "spring",
-      stiffness: 100,
-      damping: 12,
-    },
-  },
-};
-
 const techStack = [
   { src: js, alt: "JavaScript" },
   { src: node, alt: "Node.js" },
